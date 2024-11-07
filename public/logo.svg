@@ -1,0 +1,10 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .line { stroke: white; stroke-width: 2; fill: none; }
+  </style>
+  <rect width="200" height="200" fill="black"/>
+  <polygon class="line" points="100,10 130,70 70,70"/>
+  <polygon class="line" points="70,70 50,130 100,100"/>
+  <polygon class="line" points="130,70 150,130 100,100"/>
+  <polygon class="line" points="50,130 100,190 150,130"/>
+</svg>
