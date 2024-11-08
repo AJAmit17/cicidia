@@ -27,19 +27,19 @@ interface ReviewProps {
 const reviewList: ReviewProps[] = [
     {
         image: "https://github.com/shadcn.png",
-        name: "Srinaivas KS",
-        userName: "Product Manager",
+        name: "Manidar V",
+        userName: "Intern",
         comment:
-            "Wow NextJs  is awesome!. This template lets me change colors, fonts and images to match my brand identity.",
+            "I had a great experience working with this company. The team was professional, responsive, and went above and beyond to ensure that my project was completed on time and to my. I would definitely work with them again in future.",
         rating: 5.0,
     },
     {
         image: "https://github.com/shadcn.png",
-        name: "Sophia Collins",
-        userName: "Cybersecurity Analyst",
+        name: "Praveen",
+        userName: " Corporate Trainer",
         comment:
-            "At MasterSolis InfoTech, we don't just implement security - we innovate it with cutting-edge solutions that stay ahead of tomorrow's threats.",
-        rating: 4.8,
+            "Worked as Co Trainer alogn with Team and learnt a low of new technologies in quick span.",
+         rating: 4.8,
     },
     {
         image: "https://github.com/shadcn.png",
