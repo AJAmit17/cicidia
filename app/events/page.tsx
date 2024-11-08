@@ -13,12 +13,39 @@ type Event = {
     title: string;
     date: string;
     description: string;
+    address: string;
+    venue: string;
+    mapUrl: string; // URL to Google Maps or another map provider
 };
 
 const events: Event[] = [
-    { id: 1, title: 'Hackathon Atria', date: '2024-11-07', description: 'An inter-collegite 24 hour hackathon.' },
-    { id: 2, title: 'React Meetup', date: '2024-12-01', description: 'A gathering of React enthusiasts discussing the latest in React.' },
-    { id: 3, title: 'JavaScript Bootcamp', date: '2024-12-10', description: 'An intensive bootcamp covering modern JavaScript frameworks and libraries.' },
+    {
+        id: 1,
+        title: 'Hackathon Atria',
+        date: '2024-11-07',
+        description: 'An inter-collegiate 24-hour hackathon.',
+        address: 'Atria Institute of Technology, Bangalore',
+        venue: 'Main Auditorium',
+        mapUrl: 'https://maps.google.com/?q=Atria+Institute+of+Technology',
+    },
+    {
+        id: 2,
+        title: 'React Meetup',
+        date: '2024-12-01',
+        description: 'A gathering of React enthusiasts discussing the latest in React.',
+        address: 'Tech Park, Mumbai',
+        venue: 'Conference Hall B',
+        mapUrl: 'https://maps.google.com/?q=Tech+Park+Mumbai',
+    },
+    {
+        id: 3,
+        title: 'JavaScript Bootcamp',
+        date: '2024-12-10',
+        description: 'An intensive bootcamp covering modern JavaScript frameworks and libraries.',
+        address: 'CodeWorks Institute, Delhi',
+        venue: 'Training Room 101',
+        mapUrl: 'https://maps.google.com/?q=CodeWorks+Institute+Delhi',
+    },
 ];
 
 const EventPage: React.FC = () => {
@@ -70,8 +97,20 @@ const EventPage: React.FC = () => {
                         >
                             <h2 className="text-3xl font-bold mb-4">{selectedEvent.title}</h2>
                             <p className="text-primary text-lg mb-2">{selectedEvent.date}</p>
-                            <p className=" text-primary mb-6">{selectedEvent.description}</p>
-                            <Button className="px-4 py-2 rounded-full text-white bg-blue-600 hover:bg-blue-700" onClick={handleCloseModal}>
+                            <p className="text-primary mb-6">{selectedEvent.description}</p>
+                            <p className="text-lg font-medium">Venue: {selectedEvent.venue}</p>
+                            <p className="text-lg">Address: {selectedEvent.address}</p>
+                            <div className="mt-4">
+                                <a
+                                    href={selectedEvent.mapUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-600 underline"
+                                >
+                                    View on Map
+                                </a>
+                            </div>
+                            <Button className="mt-6 px-4 py-2 rounded-full text-white bg-blue-600 hover:bg-blue-700" onClick={handleCloseModal}>
                                 Close
                             </Button>
                         </motion.div>
@@ -80,7 +119,6 @@ const EventPage: React.FC = () => {
             </div>
             <FooterSection />
         </>
-
     );
 };
 
