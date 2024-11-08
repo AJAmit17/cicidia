@@ -106,7 +106,7 @@ export default function Component() {
                             <CardDescription>Evaluate and improve your skills</CardDescription>
                         </CardHeader>
                         <CardContent>
-                            <p>Our tool evaluates students' skills based on industry benchmarks and provides personalized development plans.</p>
+                            <p>Our tool evaluates students&apos; skills based on industry benchmarks and provides personalized development plans.</p>
                         </CardContent>
                     </Card>
 
@@ -143,7 +143,7 @@ export default function Component() {
                     <CardDescription>Start your journey towards a successful career</CardDescription>
                 </CardHeader>
                 <CardContent>
-                    <p className="mb-4">Our Education-Industry Collaboration Platform offers a comprehensive suite of tools and opportunities to help you succeed in your career. From personalized mentorship to hands-on projects, we're here to support your professional growth.</p>
+                    <p className="mb-4">Our Education-Industry Collaboration Platform offers a comprehensive suite of tools and opportunities to help you succeed in your career. From personalized mentorship to hands-on projects, we&apos;re here to support your professional growth.</p>
                     <Button>Sign Up Now</Button>
                 </CardContent>
             </Card>

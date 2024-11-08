@@ -1,11 +1,10 @@
 'use client'
 
 import * as React from "react"
-import Link from "next/link"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import {
     FacebookIcon,
@@ -21,7 +20,7 @@ import {
 import { Navbar } from "@/components/navbar"
 import { FooterSection } from "@/components/footer"
 
-export default function InternshipPage({ params }: { params: { slug: string } }) {
+export default function InternshipPage() {
     const internshipData = {
         title: "Frontend Development Internship",
         company: "Tech Innovators Inc.",

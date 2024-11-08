@@ -79,7 +79,7 @@ export const TeamSection = () => {
                 </h2>
 
                 <p className=" text-sm text-primary text-center mb-2 tracking-wider">
-                    Our team is composed of passionate individuals who are dedicated to providing service to our clients. We work together to achieve our goals and deliver high-quality results.
+                   &quot; Our team is composed of passionate individuals who are dedicated to providing service to our clients. We work together to achieve our goals and deliver high-quality results.&quot;
                 </p>
             </div>
 

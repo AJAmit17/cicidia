@@ -50,7 +50,7 @@ const courses = [
 
 const CourseListingPage = () => {
     const [searchTerm, setSearchTerm] = useState('');
-    const [filters, setFilters] = useState({
+    const [filters] = useState({
         category: [] as string[],
         rating: 4
     });

@@ -1,4 +1,3 @@
-//sign in
 'use client'
 
 import { useState } from 'react'
@@ -47,7 +46,7 @@ export default function Component() {
                         Sign In
                     </Button>
                     <p className="text-sm text-gray-600 dark:text-gray-400 text-center">
-                        Don't have an account?{' '}
+                        Don&apos;t have an account?{' '}
                         <Link href="/sign-up" className="text-blue-600 dark:text-blue-400 hover:underline">
                             Sign up
                         </Link>
