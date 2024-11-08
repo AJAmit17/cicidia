@@ -15,7 +15,7 @@ type Event = {
     description: string;
     address: string;
     venue: string;
-    mapUrl: string; // URL to Google Maps or another map provider
+    mapUrl: string; 
 };
 
 const events: Event[] = [

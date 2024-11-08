@@ -18,27 +18,27 @@ const FAQList: FAQProps[] = [
         value: "item-1",
     },
     {
-        question: "Duis aute irure dolor in reprehenderit in voluptate velit?",
+        question: "What is the duration of your internship program?",
         answer:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam consectetur sapiente, iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+            "6 months",
         value: "item-2",
     },
     {
         question:
-            "Lorem ipsum dolor sit amet Consectetur natus dolor minus quibusdam?",
+            "What skills can interns expect to develop during their time at MasterSolis?",
         answer:
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis.",
+            "Practical exposure to real-world tech projects",
         value: "item-3",
     },
     {
-        question: "Excepteur sint occaecat cupidata non proident sunt?",
-        answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        question: "What makes MasterSolis InfoTech different from other IT consulting companies?",
+        answer: " Comprehensive Service Portfolio,Technology Focus,Expertise & Team Quality.",
         value: "item-4",
     },
     {
         question:
-            "Enim ad minim veniam, quis nostrud exercitation ullamco laboris?",
-        answer: "consectetur adipisicing elit. Sint labore.",
+            "Do you offer guidance throughout the entire project lifecycle?",
+        answer: "Yes,we do offer.",
         value: "item-5",
     },
 ];

@@ -1,4 +1,3 @@
-
 import {
     Card,
     CardContent,
@@ -9,6 +8,7 @@ import {
 import { GithubIcon, LinkedinIcon, XIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
 interface TeamProps {
     imageUrl: string;
     firstName: string;
@@ -16,10 +16,12 @@ interface TeamProps {
     positions: string[];
     socialNetworks: SocialNetworkProps[];
 }
+
 interface SocialNetworkProps {
     name: string;
     url: string;
 }
+
 export const TeamSection = () => {
     const teamList: TeamProps[] = [
         {
@@ -60,6 +62,7 @@ export const TeamSection = () => {
             ],
         }
     ];
+
     const socialIcon = (socialName: string) => {
         switch (socialName) {
             case "LinkedIn":
@@ -74,24 +77,21 @@ export const TeamSection = () => {
     return (
         <section id="team" className="container lg:w-[75%] py-24 sm:py-32">
             <div className="text-center mb-8">
-                <h2 className=" text-3xl md:text-4xl text-center font-bold gap-8">
+                <h2 className="text-3xl md:text-4xl font-bold gap-8">
                     Meet Our Talented Team: Experts in Their Fields.
                 </h2>
 
-                <p className=" text-sm text-primary text-center mb-2 tracking-wider">
-                   &quot; Our team is composed of passionate individuals who are dedicated to providing service to our clients. We work together to achieve our goals and deliver high-quality results.&quot;
+                <p className="text-sm text-primary text-center mb-2 tracking-wider">
+                   &quot;Our team is composed of passionate individuals who are dedicated to providing service to our clients. We work together to achieve our goals and deliver high-quality results.&quot;
                 </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
                 {teamList.map(
-                    (
-                        { imageUrl, firstName, lastName, positions, socialNetworks },
-                        index
-                    ) => (
+                    ({ imageUrl, firstName, lastName, positions, socialNetworks }, index) => (
                         <Card
                             key={index}
-                            className="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg"
+                            className="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group"
                         >
                             <CardHeader className="p-0 gap-0">
                                 <div className="h-full overflow-hidden">
@@ -100,7 +100,7 @@ export const TeamSection = () => {
                                         alt=""
                                         width={300}
                                         height={300}
-                                        className="w-full aspect-square object-cover saturate-0 transition-all duration-200 ease-linear size-full group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.01]"
+                                        className="w-full aspect-square object-cover transition-all duration-200 ease-linear group-hover:scale-105"
                                     />
                                 </div>
                                 <CardTitle className="py-6 pb-4 px-6">
@@ -118,7 +118,6 @@ export const TeamSection = () => {
                                     {index < positions.length - 1 && <span>,</span>}
                                 </CardContent>
                             ))}
-
                             <CardFooter className="space-x-4 mt-auto">
                                 {socialNetworks.map(({ name, url }, index) => (
                                     <Link

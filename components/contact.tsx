@@ -88,7 +88,7 @@ export const ContactSection = () => {
                 <div className="font-bold">Call us</div>
               </div>
 
-              <div>944-0965-396</div>
+              <div>+91-94409 65396</div>
             </div>
 
             <div>
@@ -97,7 +97,7 @@ export const ContactSection = () => {
                 <div className="font-bold">Mail US</div>
               </div>
 
-              <div>Email. mastersolisinfotech@gmail.com</div>
+              <div>Email: mastersolisinfotech@gmail.com</div>
             </div>
 
             <div>
@@ -130,7 +130,7 @@ export const ContactSection = () => {
                       <FormItem className="w-full">
                         <FormLabel>First Name</FormLabel>
                         <FormControl>
-                          <Input placeholder="Leopoldo" {...field} />
+                          <Input placeholder="Ram" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -143,7 +143,7 @@ export const ContactSection = () => {
                       <FormItem className="w-full">
                         <FormLabel>Last Name</FormLabel>
                         <FormControl>
-                          <Input placeholder="Miranda" {...field} />
+                          <Input placeholder="Kumar" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -161,7 +161,7 @@ export const ContactSection = () => {
                         <FormControl>
                           <Input
                             type="email"
-                            placeholder="abcdev@gmail.com"
+                            placeholder="ramkumar@gmail.com"
                             {...field}
                           />
                         </FormControl>

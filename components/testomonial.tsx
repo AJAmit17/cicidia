@@ -27,10 +27,10 @@ interface ReviewProps {
 const reviewList: ReviewProps[] = [
     {
         image: "https://github.com/shadcn.png",
-        name: "Srinaivas ",
+        name: "Srinaivas KS",
         userName: "Product Manager",
         comment:
-            "Wow NextJs  is awesome!. This template lets me change colors, fonts and images to match my brand identity. ",
+            "Wow NextJs  is awesome!. This template lets me change colors, fonts and images to match my brand identity.",
         rating: 5.0,
     },
     {
@@ -38,24 +38,22 @@ const reviewList: ReviewProps[] = [
         name: "Sophia Collins",
         userName: "Cybersecurity Analyst",
         comment:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. ",
+            "At MasterSolis InfoTech, we don't just implement security - we innovate it with cutting-edge solutions that stay ahead of tomorrow's threats.",
         rating: 4.8,
     },
-
     {
         image: "https://github.com/shadcn.png",
         name: "Adam Johnson",
         userName: "Chief Technology Officer",
         comment:
-            "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "Proud to lead a team that consistently pushes technological boundaries while delivering state-of-the-art solutions across cloud, web, and IT services, transforming client visions into innovative realities.",
         rating: 4.9,
     },
     {
         image: "https://github.com/shadcn.png",
         name: "Ethan Parker",
         userName: "Data Scientist",
-        comment:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        comment: "Great work experience in MasterSolis as a Data Scientist",
         rating: 5.0,
     },
     {
@@ -63,18 +61,33 @@ const reviewList: ReviewProps[] = [
         name: "Ava Mitchell",
         userName: "IT Project Manager",
         comment:
-            "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud incididunt consectetur adipiscing elit.",
+            "Leading MasterSolis's technological innovation isn't just about implementing cutting-edge solutions - it's about transforming possibilities into reality for every client we serve.",
         rating: 5.0,
     },
     {
         image: "https://github.com/shadcn.png",
         name: "Isabella Reed",
         userName: "DevOps Engineer",
-        comment:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        comment: "Great to work here!! Friendly environment",
         rating: 4.9,
     },
 ];
+
+const renderStars = (rating: number) => {
+    const fullStars = Math.floor(rating);
+    const hasHalfStar = rating - fullStars >= 0.5;
+
+    return (
+        <>
+            {Array.from({ length: fullStars }).map((_, index) => (
+                <Star key={index} className="size-4 fill-primary text-primar saturate-100" />
+            ))}
+            {hasHalfStar && (
+                <Star key="half" className="size-4 fill-primary text-primary opacity-20" />
+            )}
+        </>
+    );
+};
 
 export const TestimonialSection = () => {
     return (
@@ -83,7 +96,6 @@ export const TestimonialSection = () => {
                 <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
                     Testimonials
                 </h2>
-
                 <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
                     Hear What Our 1000+ Clients Say
                 </h2>
@@ -104,11 +116,7 @@ export const TestimonialSection = () => {
                             <Card className="bg-muted/50 dark:bg-card">
                                 <CardContent className="pt-6 pb-0">
                                     <div className="flex gap-1 pb-6">
-                                        <Star className="size-4 fill-primary text-primary" />
-                                        <Star className="size-4 fill-primary text-primary" />
-                                        <Star className="size-4 fill-primary text-primary" />
-                                        <Star className="size-4 fill-primary text-primary" />
-                                        <Star className="size-4 fill-primary text-primary" />
+                                        {renderStars(review.rating)}
                                     </div>
                                     {`"${review.comment}"`}
                                 </CardContent>
@@ -117,10 +125,10 @@ export const TestimonialSection = () => {
                                     <div className="flex flex-row items-center gap-4">
                                         <Avatar>
                                             <AvatarImage
-                                                src="https://avatars.githubusercontent.com/u/75042455?v=4"
-                                                alt="radix"
+                                                src={review.image}
+                                                alt={review.name}
                                             />
-                                            <AvatarFallback>SV</AvatarFallback>
+                                            <AvatarFallback>{review.name.charAt(0)}</AvatarFallback>
                                         </Avatar>
 
                                         <div className="flex flex-col">
