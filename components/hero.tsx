@@ -48,8 +48,8 @@ export const HeroSection = () => {
                         className="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-secondary  border-t-primary/30"
                         src={
                             theme === "light"
-                                ? "https://static.wixstatic.com/media/11062b_f6bec34858fa456ab712aa4018880375~mv2.jpg/v1/fill/w_1897,h_365,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_f6bec34858fa456ab712aa4018880375~mv2.jpg"
-                                : "https://static.wixstatic.com/media/11062b_f6bec34858fa456ab712aa4018880375~mv2.jpg/v1/fill/w_1897,h_365,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_f6bec34858fa456ab712aa4018880375~mv2.jpg"
+                                ? "https://i0.wp.com/oecd-development-matters.org/wp-content/uploads/2022/11/Quality-infrastructure-development.jpg?w=1440&ssl=1"
+                                : "https://i0.wp.com/oecd-development-matters.org/wp-content/uploads/2022/11/Quality-infrastructure-development.jpg?w=1440&ssl=1"
                         }
                         alt="dashboard"
                     />

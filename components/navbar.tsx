@@ -16,19 +16,20 @@ interface RouteProps {
 }
 
 const routeList: RouteProps[] = [
-    { href: "#testimonials", label: "Testimonials" },
-    { href: "#team", label: "Team" },
-    { href: "#contact", label: "Contact" },
-    { href: "#faq", label: "FAQ" },
+    { href: "#services", label: "Our Services" },
+    { href: "/products", label: "Products" },
+    { href: "/courses", label: "Courses" },
+    { href: "/internship", label: "Internship" },
 ];
 
 const extraRoutes: RouteProps[] = [
     { href: "/blogs", label: "Blog" },
-    { href: "/services", label: "Services" },
-    { href: "/portfolio", label: "Portfolio" },
-    { href: "/pricing", label: "Pricing" },
-    { href: "/careers", label: "Careers" },
-    { href: "/about", label: "About" },
+    { href: "/events", label: "Events" },
+    { href: "/groups", label: "Groups" },
+    { href: "/login", label: "Login" },
+    { href: "/my-account", label: "My Account" },
+    { href: "/resources", label: "Resources" },
+    { href: "/sign-up", label: "Sign-Up" },
 ];
 
 export const Navbar = () => {
@@ -40,7 +41,7 @@ export const Navbar = () => {
                 <Image src="/logo.jpg" alt="logo" width={50} height={50} />
                 MasterSolis InfoTech
             </Link>
-            
+
             {/* <!-- Mobile Menu --> */}
             <div className="flex items-center lg:hidden">
                 <Sheet open={isOpen} onOpenChange={setIsOpen}>

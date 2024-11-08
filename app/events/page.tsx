@@ -16,7 +16,7 @@ type Event = {
 };
 
 const events: Event[] = [
-    { id: 1, title: 'Tech Conference 2024', date: '2024-11-15', description: 'An annual tech conference covering AI, web development, and more.' },
+    { id: 1, title: 'Hackathon Atria', date: '2024-11-07', description: 'An inter-collegite 24 hour hackathon.' },
     { id: 2, title: 'React Meetup', date: '2024-12-01', description: 'A gathering of React enthusiasts discussing the latest in React.' },
     { id: 3, title: 'JavaScript Bootcamp', date: '2024-12-10', description: 'An intensive bootcamp covering modern JavaScript frameworks and libraries.' },
 ];
